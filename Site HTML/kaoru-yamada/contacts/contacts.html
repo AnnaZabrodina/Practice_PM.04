@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Каору Ямада - Контакты</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#87CEEB;color:#000;}
+.marquee{width:100%;background:#4682B4;color:#fff;font-weight:bold;padding:8px 0;text-align:center;position:fixed;top:0;left:0;z-index:1000;white-space:nowrap;}
+nav{background:#5F9EA0;overflow:hidden;margin-top:40px;}
+nav a{float:left;display:block;color:#fff;text-align:center;padding:14px 20px;text-decoration:none;font-weight:bold;}
+nav a:hover{background:#4682B4;}
+nav span{float:right;padding:14px 20px;}
+.container{max-width:1000px;margin:80px auto 20px;padding:20px;background:#B0E0E6;border-radius:10px;}
+h1{margin-top:0;}
+.contact-item{margin-bottom:15px; font-size:18px;}
+</style>
+</head>
+<body>
+
+<div class="marquee">Телефон: +7 902 651 69 47 | Сайт сделан: Забродина А.Е.</div>
+
+<nav>
+<a href="../index/index.html">Об авторе</a>
+<a href="../gallery/gallery.html">Галерея</a>
+<a href="../articles/articles.html">Статьи</a>
+<a href="../exhibitions/exhibitions.html">Выставки</a>
+<a href="../contacts/contacts.html">Контакты</a>
+<span>www.kaoru-yamada.com</span>
+</nav>
+
+<div class="container">
+<h1>Контакты</h1>
+
+<p class="contact-item"><strong>Телефон:</strong> +81 90 1234 5678</p>
+<p class="contact-item"><strong>Email:</strong> info@kaoru-yamada.com</p>
+<p class="contact-item"><strong>Адрес:</strong> Токио, Япония</p>
+
+<p>Вы можете связаться с художницей или её менеджером для уточнения информации о выставках и приобретении работ.</p>
+</div>
+
+<script>
+const marquee=document.querySelector('.marquee');let offset=0;
+function scrollMarquee(){offset-=1;if(offset<-marquee.scrollWidth){offset=window.innerWidth;}marquee.style.transform=`translateX(${offset}px)`;}
+setInterval(scrollMarquee,20);
+</script>
+
+</body>
+</html>

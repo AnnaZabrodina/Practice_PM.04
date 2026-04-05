@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Каору Ямада - Главная</title>
+<style>
+/* --- Стили общие --- */
+body { margin:0; font-family: Arial, sans-serif; background:#87CEEB; color:#000; }
+.marquee { width:100%; background:#4682B4; color:#fff; font-weight:bold; padding:8px 0; text-align:center; position:fixed; top:0; left:0; z-index:1000; white-space:nowrap;}
+nav { background:#5F9EA0; overflow:hidden; margin-top:40px; }
+nav a { float:left; display:block; color:#fff; text-align:center; padding:14px 20px; text-decoration:none; font-weight:bold;}
+nav a:hover { background:#4682B4; }
+nav span { float:right; padding:14px 20px; }
+.container { max-width:1000px; margin:80px auto 20px; padding:20px; background:#B0E0E6; border-radius:10px;}
+.artist-photo { float:left; width:250px; margin-right:20px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.3);}
+h1 { margin-top:0; } p { line-height:1.5;}
+.clearfix::after { content:""; clear:both; display:table; }
+</style>
+</head>
+<body>
+
+<div class="marquee">Телефон: +7 902 651 69 47 | Сайт сделан: Забродина А.Е.</div>
+
+<nav>
+<a href="../index/index.html">Об авторе</a>
+<a href="../gallery/gallery.html">Галерея</a>
+<a href="../articles/articles.html">Статьи</a>
+<a href="../exhibitions/exhibitions.html">Выставки</a>
+<a href="../contacts/contacts.html">Контакты</a>
+<span>www.kaoru-yamada.com</span>
+</nav>
+
+<div class="container clearfix">
+<img src="../images/portreit.jpg" alt="Портрет Каору Ямада" class="artist-photo">
+<h1>Каору Ямада</h1>
+<p><strong>Направление:</strong> Живопись</p>
+<p><strong>Год рождения:</strong> 1980</p>
+<p><strong>Образование:</strong> Академия искусств, Токио (1998–2002)</p>
+<p><strong>Членство:</strong> Ассоциация современного искусства Японии с 2005 года</p>
+<p>Каору Ямада — современный японский художник, известный своими атмосферными пейзажами и натюрмортами. Его работы выставлялись на международных выставках.</p>
+</div>
+
+<script>
+// бегущая строка
+const marquee = document.querySelector('.marquee'); let offset = 0;
+function scrollMarquee() { offset-=1; if(offset<-marquee.scrollWidth){offset=window.innerWidth;} marquee.style.transform=`translateX(${offset}px)`;}
+setInterval(scrollMarquee,20);
+</script>
+
+</body>
+</html>

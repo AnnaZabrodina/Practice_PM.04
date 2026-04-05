@@ -1,0 +1,11 @@
+# Включаем модуль перезаписи URL
+RewriteEngine On
+
+# Редирект с корня сайта на /index/
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^$ /index/index/ [R=301,L]
+
+# Настройки для корректной работы файлов и папок
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index/$1 [L]

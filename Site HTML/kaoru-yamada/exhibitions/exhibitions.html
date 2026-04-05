@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Каору Ямада - Выставки</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#87CEEB;color:#000;}
+.marquee{width:100%;background:#4682B4;color:#fff;font-weight:bold;padding:8px 0;text-align:center;position:fixed;top:0;left:0;z-index:1000;white-space:nowrap;}
+nav{background:#5F9EA0;overflow:hidden;margin-top:40px;}
+nav a{float:left;display:block;color:#fff;text-align:center;padding:14px 20px;text-decoration:none;font-weight:bold;}
+nav a:hover{background:#4682B4;}
+nav span{float:right;padding:14px 20px;}
+.container{max-width:1000px;margin:80px auto 20px;padding:20px;background:#B0E0E6;border-radius:10px;}
+h1{margin-top:0;}
+.table-container{overflow-x:auto;margin-top:20px;}
+table{width:100%;border-collapse:collapse;background:#fff;}
+th,td{border:1px solid #4682B4;padding:10px;text-align:left;}
+th{background:#5F9EA0;color:#fff;}
+</style>
+</head>
+<body>
+
+<div class="marquee">Телефон: +7 902 651 69 47 | Сайт сделан: Забродина А.Е.</div>
+
+<nav>
+<a href="../index/index.html">Об авторе</a>
+<a href="../gallery/gallery.html">Галерея</a>
+<a href="../articles/articles.html">Статьи</a>
+<a href="../exhibitions/exhibitions.html">Выставки</a>
+<a href="../contacts/contacts.html">Контакты</a>
+<span>www.kaoru-yamada.com</span>
+</nav>
+
+<div class="container">
+<h1>Выставки и музеи</h1>
+
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th>Название выставки/музея</th>
+<th>Город, страна</th>
+<th>Год</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Современная живопись</td>
+<td>Токио, Япония</td>
+<td>2022</td>
+</tr>
+<tr>
+<td>Международная арт-галерея</td>
+<td>Париж, Франция</td>
+<td>2021</td>
+</tr>
+<tr>
+<td>Натюрморты и пейзажи</td>
+<td>Киото, Япония</td>
+<td>2020</td>
+</tr>
+<tr>
+<td>Национальный музей искусств</td>
+<td>Осака, Япония</td>
+<td>2019</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<script>
+const marquee=document.querySelector('.marquee');let offset=0;
+function scrollMarquee(){offset-=1;if(offset<-marquee.scrollWidth){offset=window.innerWidth;}marquee.style.transform=`translateX(${offset}px)`;}
+setInterval(scrollMarquee,20);
+</script>
+
+</body>
+</html>

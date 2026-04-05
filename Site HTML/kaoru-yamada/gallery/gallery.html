@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Галерея Каору Ямада</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #87CEEB;
+    margin: 0;
+    padding: 0;
+}
+
+.marquee {
+    width: 100%;
+    background-color: #4682B4;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    white-space: nowrap;
+}
+nav{background:#5F9EA0;overflow:hidden;margin-top:40px;}
+nav a{float:left;display:block;color:#fff;text-align:center;padding:14px 20px;text-decoration:none;font-weight:bold;}
+nav a:hover{background:#4682B4;}
+nav span{float:right;padding:14px 20px;}
+
+.container {
+    max-width: 1000px;
+    margin: 80px auto 20px;
+    padding: 20px;
+    background-color: #B0E0E6;
+    border-radius: 10px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    position: relative;
+    width: 220px;
+    border: 2px solid #4682B4;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #cceeff;
+    text-align: center;
+    transition: transform 0.3s, height 0.3s;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    height: auto;
+}
+
+.gallery-item img {
+    width: 100%;
+    display: block;
+}
+
+.card-title {
+    font-style: italic;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.card-year {
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Описание по умолчанию — одно предложение */
+.card-description {
+    font-style: italic;
+    font-size: 0.85em;
+    max-height: 1.2em;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+/* При наведении показывается весь текст */
+.gallery-item:hover .card-description {
+    max-height: 500px;
+}
+</style>
+</head>
+<body>
+
+<div class="marquee">Телефон: +7 902 651 69 47 | Сайт сделан: Забродина А.Е.</div>
+
+<nav>
+    <a href="../index/index.html">Об авторе</a>
+    <a href="gallery.html">Галерея</a>
+    <a href="../articles/articles.html">Статьи</a>
+    <a href="../exhibitions/exhibitions.html">Выставки</a>
+    <a href="../contacts/contacts.html">Контакты</a>
+    <span style="margin-left:auto;color:#000;">www.kaoru-yamada.com</span>
+</nav>
+
+<div class="container">
+<h1>Галерея работ</h1>
+<div class="gallery">
+
+<div class="gallery-item">
+    <img src="../images/1.jpg" alt="Atmospheric Forest">
+    <div class="card-title">Atmospheric Forest</div>
+    <div class="card-year">2018</div>
+    <div class="card-description">
+        Одиночество и созерцание. Человек на вершине холма в гармонии с природой, где небо встречается с водой, а время останавливается.
+    </div>
+</div>
+
+<div class="gallery-item">
+    <img src="../images/2.png" alt="Lake Reflection">
+    <div class="card-title">Lake Reflection</div>
+    <div class="card-year">2020</div>
+    <div class="card-description">
+        Дама в жёлтом платье. Изящный силуэт в стиле модерн на фоне декоративного орнамента — воплощение элегантности и женственности.
+    </div>
+</div>
+
+<div class="gallery-item">
+    <img src="../images/3.jpg" alt="Sunlit Window">
+    <div class="card-title">Sunlit Window</div>
+    <div class="card-year">2019</div>
+    <div class="card-description">
+        Солнечный завтрак. Жёлтые цветы, свежезаваренный чай и тёплый свет, льющийся через открытые окна — воплощение радости простого утра.
+    </div>
+</div>
+
+<div class="gallery-item">
+    <img src="../images/4.jpg" alt="Night Study">
+    <div class="card-title">Night Study</div>
+    <div class="card-year">2021</div>
+    <div class="card-description">
+        Ночная мастерская мечты. Рабочий стол, залитый светом лампы, среди книг, цветов и растений — пространство творчества и вдохновения.
+
+    </div>
+</div>
+
+<div class="gallery-item">
+    <img src="../images/5.jpg" alt="Winter Blossom">
+    <div class="card-title">Winter Blossom</div>
+    <div class="card-year">2018</div>
+    <div class="card-description">
+        Зимнее утро. Голубой фарфор и цветущие ветви у окна создают атмосферу уюта и спокойствия в зимний день.
+    </div>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Каору Ямада - Статьи</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#87CEEB;color:#000;}
+.marquee{width:100%;background:#4682B4;color:#fff;font-weight:bold;padding:8px 0;text-align:center;position:fixed;top:0;left:0;z-index:1000;white-space:nowrap;}
+nav{background:#5F9EA0;overflow:hidden;margin-top:40px;}
+nav a{float:left;display:block;color:#fff;text-align:center;padding:14px 20px;text-decoration:none;font-weight:bold;}
+nav a:hover{background:#4682B4;}
+nav span{float:right;padding:14px 20px;}
+.container{max-width:1000px;margin:80px auto 20px;padding:20px;background:#B0E0E6;border-radius:10px;}
+h1{margin-top:0;}
+article{margin-bottom:20px; padding:10px; background:#fff; border-radius:5px; box-shadow:0 0 5px rgba(0,0,0,0.2);}
+article h2{margin-top:0;}
+</style>
+</head>
+<body>
+
+<div class="marquee">Телефон: +7 902 651 69 47 | Сайт сделан: Забродина А.Е.</div>
+
+<nav>
+<a href="../index/index.html">Об авторе</a>
+<a href="../gallery/gallery.html">Галерея</a>
+<a href="../articles/articles.html">Статьи</a>
+<a href="../exhibitions/exhibitions.html">Выставки</a>
+<a href="../contacts/contacts.html">Контакты</a>
+<span>www.kaoru-yamada.com</span>
+</nav>
+
+<div class="container">
+<h1>Статьи о Каору Ямада</h1>
+
+<article>
+<h2>Атмосферные пейзажи в работах Ямада</h2>
+<p>Статья о том, как художник передает настроение через цвет и свет в своих пейзажах.</p>
+</article>
+
+<article>
+<h2>Натюрморты: гармония и детали</h2>
+<p>Рассмотрение натюрмортов Каору Ямада, их композиции и особенность художественной техники.</p>
+</article>
+
+</div>
+
+<script>
+const marquee=document.querySelector('.marquee');let offset=0;
+function scrollMarquee(){offset-=1;if(offset<-marquee.scrollWidth){offset=window.innerWidth;}marquee.style.transform=`translateX(${offset}px)`;}
+setInterval(scrollMarquee,20);
+</script>
+
+</body>
+</html>
